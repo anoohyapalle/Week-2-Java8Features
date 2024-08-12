@@ -8,11 +8,11 @@ public class SalesAnalysis {
 
     public static void main(String[] args) {
         List<SalesRecord> records = new ArrayList<>();
-        records.add(new SalesRecord(1, "Alice", "North", 1500.00, LocalDate.of(2024, 8, 10)));
-        records.add(new SalesRecord(2, "Bob", "South", 2000.00, LocalDate.of(2024, 8, 12)));
-        records.add(new SalesRecord(3, "Alice", "North", 2500.00, LocalDate.of(2024, 8, 13)));
-        records.add(new SalesRecord(4, "Charlie", "East", 1800.00, LocalDate.of(2024, 8, 14)));
-        records.add(new SalesRecord(5, "Bob", "South", 2100.00, LocalDate.of(2024, 8, 15)));
+        records.add(new SalesRecord(1, "Anoohya", "North", 1500.00, LocalDate.of(2024, 8, 10)));
+        records.add(new SalesRecord(2, "Bobby", "South", 2000.00, LocalDate.of(2024, 8, 12)));
+        records.add(new SalesRecord(3, "Praise", "North", 2500.00, LocalDate.of(2024, 8, 13)));
+        records.add(new SalesRecord(4, "Devika", "East", 1800.00, LocalDate.of(2024, 8, 14)));
+        records.add(new SalesRecord(5, "Bobby", "South", 2100.00, LocalDate.of(2024, 8, 15)));
 
         List<SalesRecord> northRegionRecords = records.stream()
                 .filter(record -> "North".equals(record.getRegion()))
